@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacterial Identification </title>
+    <style>
+        /* General body and form styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #005b99;
+        }
+
+        /* Main form container */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Flexbox layout for labels and selects */
+        .test-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        /* Label styling */
+        label {
+            flex: 1;
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* Dropdown styling */
+        select {
+            flex: 1;
+            padding: 6px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        /* Dropdown hover and focus */
+        select:hover,
+        select:focus {
+            border-color: #007acc;
+        }
+
+        /* Submit button styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005b99;
+        }
+
+        /* Result display area */
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #007acc;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>Bacterial Identification : Gram negative Bacteria</h1>
+
+        <!-- Test 1 -->
+        <div class="test-group">
+            <label for="test1">Citrate Utilization:</label>
+            <select id="test1">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 2 -->
+        <div class="test-group">
+            <label for="test2">Lysin:</label>
+            <select id="test2">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 3 -->
+        <div class="test-group">
+            <label for="test3">Ornithine:</label>
+            <select id="test3">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 4 -->
+        <div class="test-group">
+            <label for="test4">Urease:</label>
+            <select id="test4">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 5 -->
+        <div class="test-group">
+            <label for="test5">TDA:</label>
+            <select id="test5">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 6 -->
+        <div class="test-group">
+            <label for="test6">Nitrate Reduction:</label>
+            <select id="test6">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 7 -->
+        <div class="test-group">
+            <label for="test7">H2S Production:</label>
+            <select id="test7">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 8 -->
+        <div class="test-group">
+            <label for="test8">Glucose:</label>
+            <select id="test8">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 9 -->
+        <div class="test-group">
+            <label for="test9">Adonitol:</label>
+            <select id="test9">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 10 -->
+        <div class="test-group">
+            <label for="test10">Lactose:</label>
+            <select id="test10">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 11 -->
+        <div class="test-group">
+            <label for="test11">Arabinose:</label>
+            <select id="test11">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <!-- Test 12 -->
+        <div class="test-group">
+            <label for="test12">Sorbitol:</label>
+            <select id="test12">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+
+        <button type="button" onclick="identifyBacteria()">Identify Bacteria</button>
+
+        <!-- Display the result here -->
+        <div id="result">Result: </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        // Initialize an empty database
+        let bacteriaDatabase = [];
+
+        // Fetch CSV file and load data into bacteriaDatabase array
+        Papa.parse("bacteriaData.csv", {
+            download: true,
+            header: true,
+            complete: function(results) {
+                bacteriaDatabase = results.data;
+                console.log("Bacteria database loaded:", bacteriaDatabase);
+            }
+        });
+
+        function identifyBacteria() {
+            // Collect test results
+            let testResults = {
+                citrate: document.getElementById("test1").value,
+                lysin: document.getElementById("test2").value,
+                ornithine: document.getElementById("test3").value,
+                urease: document.getElementById("test4").value,
+                tda: document.getElementById("test5").value,
+                nitrate: document.getElementById("test6").value,
+                h2s: document.getElementById("test7").value,
+                glucose: document.getElementById("test8").value,
+                adonitol: document.getElementById("test9").value,
+                lactose: document.getElementById("test10").value,
+                arabinose: document.getElementById("test11").value,
+                sorbitol: document.getElementById("test12").value
+            };
+
+            // Match the test results with bacteria in the database
+            let matchFound = false;
+            bacteriaDatabase.forEach(bacteria => {
+                if (testResults.citrate === bacteria.citrate &&
+                    testResults.lysin === bacteria.lysin &&
+                    testResults.ornithine === bacteria.ornithine &&
+                    testResults.urease === bacteria.urease &&
+                    testResults.tda === bacteria.tda &&
+                    testResults.nitrate === bacteria.nitrate &&
+                    testResults.h2s === bacteria.h2s &&
+                    testResults.glucose === bacteria.glucose &&
+                    testResults.adonitol === bacteria.adonitol &&
+                    testResults.lactose === bacteria.lactose &&
+                    testResults.arabinose === bacteria.arabinose &&
+                    testResults.sorbitol === bacteria.sorbitol) {
+                    document.getElementById("result").textContent = "Result: " + bacteria.name;
+                    matchFound = true;
+                }
+            });
+
+            if (!matchFound) {
+                document.getElementById("result").textContent = "Result: No match found";
+            }
+        }
+    </script>
+
+</body>
+</html>
